@@ -15,16 +15,16 @@ const Heading = styled.h1`
   font-weight: 900;
 `
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Head>
-        <title>Home Page</title>
+        <title>Contact Page</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <Hero>
-        <Heading>NEXT</Heading>
+        <Heading>Contact</Heading>
       </Hero>
     </>
   )
