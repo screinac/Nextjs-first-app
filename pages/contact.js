@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styled from 'styled-components'
+import Image from 'next/image'
 
 const Hero = styled.div`
   height: 90vh;
@@ -7,6 +8,7 @@ const Hero = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `
 
 const Heading = styled.h1`
@@ -24,7 +26,7 @@ export default function Contact() {
       </Head>
 
       <Hero>
-        <Heading>Contact</Heading>
+        <Image src='/images/contact.jpg' alt='me' layout='fill' />
       </Hero>
     </>
   )

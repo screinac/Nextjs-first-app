@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 const Nav = styled.nav`
-  height: 80px;
+  height: 10vh;
   background: #000;
   color: #fff;
   display: flex;

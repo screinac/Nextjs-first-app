@@ -24,7 +24,7 @@ export default function About() {
       </Head>
 
       <Hero>
-        <Heading>About</Heading>
+        <Heading>Abo</Heading>
       </Hero>
     </>
   )
