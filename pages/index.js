@@ -1,58 +1,36 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styled from 'styled-components'
-import { library } from '@fortawesome/fontawesome-svg-core'
 
 // import your icons
-import { faCode, faHighlighter } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faInstagram,
+  faFacebook,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons'
 
-const StyledImage = styled(Image)`
-  /* height: 500px; */
-  z-index: -1;
-`
+// import Hero style components
+import {
+  Hero,
+  BackgroundImage,
+  Heading,
+  BottomLine,
+  ParagraphCorner,
+  BarLink,
+  IconBar,
+  Icon,
+} from '../components/home/heroComponents'
 
-const Icon = styled(FontAwesomeIcon)`
-  /* height: 500px; */
-  width: 40px;
-  color: #fff;
-  margin: 0 10px;
-`
-
-const Wrap = styled.div`
-  height: 90vh;
-  /* background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-`
-const Heading = styled.h1`
-  color: #000;
-  font-size: clamp(1rem, 17vw, 10rem);
-  text-transform: uppercase;
-  justify-content: flex-end;
-  display: flex;
-  margin: 0;
-  letter-spacing: 15px;
-`
-const IconBar = styled.div`
-  /* background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  display: flex;
-  position: absolute;
-  bottom: 10px;
-  width: 100vw;
-  margin-bottom: 10px;
-  justify-content: flex-end;
-`
-
-const TitleContainer = styled.div``
+// import Content style components
+import {
+  Content,
+  Column,
+  TextBlock,
+  Title,
+  Subtitle,
+  Line,
+  Text,
+  ContentImage,
+} from '../components/home/contentComponents'
 
 export default function Home() {
   return (
@@ -62,27 +40,144 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Wrap>
-        <StyledImage
-          alt='Contact'
-          src='/images/contact.jpg'
-          layout='fill'
-          // width={500}
-          // height={500}
-          objectFit='cover'
-          objectPosition='center'
+      <Hero>
+        <BackgroundImage
+          alt='Green background image'
+          src='/images/greenBackground.jpg'
         />
-        <TitleContainer>
-          <Heading>matter</Heading>
-          <Heading>horn</Heading>
-        </TitleContainer>
 
-        <IconBar>
-          <Icon icon={faCode} />
-          <Icon icon={faHighlighter} />
-          <Icon icon={faCode} style={{ marginRight: '100px' }} />
-        </IconBar>
-      </Wrap>
+        <Heading>vegan</Heading>
+
+        <BottomLine>
+          <ParagraphCorner>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, harum.
+          </ParagraphCorner>
+
+          <IconBar>
+            <BarLink href='https://es-la.facebook.com/'>
+              <Icon icon={faInstagram} />
+            </BarLink>
+            <BarLink href='https://www.youtube.com/'>
+              <Icon icon={faFacebook} />
+            </BarLink>
+            <BarLink href='https://www.youtube.com/'>
+              <Icon icon={faWhatsapp} />
+            </BarLink>
+          </IconBar>
+        </BottomLine>
+      </Hero>
+
+      <Content>
+        <Column left>
+          <TextBlock left>
+            <Title>lorem</Title>
+            <Subtitle>Lorem ipsum dolor sit amet.</Subtitle>
+            <Line>a</Line>
+            <Text>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+              quibusdam provident quisquam, aut dolore quas molestias fugiat eos
+              est inventore.
+            </Text>
+          </TextBlock>
+        </Column>
+
+        <Column>
+          <ContentImage
+            src='/images/fruit.png'
+            alt='Fruit'
+            width={300}
+            height={200}
+          />
+        </Column>
+
+        <Column left>
+          <ContentImage
+            src='/images/fruit.png'
+            alt='Fruit'
+            width={300}
+            height={200}
+          />
+        </Column>
+
+        <Column>
+          <TextBlock>
+            <Title>lorem</Title>
+            <Subtitle>Lorem ipsum dolor sit amet.</Subtitle>
+            <Line>a</Line>
+            <Text>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+              quibusdam provident quisquam, aut dolore quas molestias fugiat eos
+              est inventore.
+            </Text>
+          </TextBlock>
+        </Column>
+      </Content>
+
+      <Hero style={{ height: '500px' }}>
+        <BackgroundImage
+          alt='Green background image'
+          src='/images/background.jpeg'
+        />
+
+        <Heading>cafe</Heading>
+      </Hero>
+
+      <Content>
+        <Column left>
+          <TextBlock left>
+            <Title>lorem</Title>
+            <Subtitle>Lorem ipsum dolor sit amet.</Subtitle>
+            <Line>a</Line>
+            <Text>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+              quibusdam provident quisquam, aut dolore quas molestias fugiat eos
+              est inventore.
+            </Text>
+            <Text>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+              quibusdam provident quisquam, aut dolore quas molestias fugiat eos
+              est inventore.
+            </Text>
+          </TextBlock>
+        </Column>
+
+        <Column>
+          <ContentImage
+            src='/images/fruit.png'
+            alt='Fruit'
+            width={300}
+            height={200}
+          />
+        </Column>
+
+        <Column left>
+          <ContentImage
+            src='/images/fruit.png'
+            alt='Fruit'
+            width={300}
+            height={200}
+          />
+        </Column>
+
+        <Column>
+          <TextBlock>
+            <Title>lorem</Title>
+            <Subtitle>Lorem ipsum dolor sit amet.</Subtitle>
+            <Line>a</Line>
+            <Text>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+              quibusdam provident quisquam, aut dolore quas molestias fugiat eos
+              est inventore.
+            </Text>
+            <Title>lorem</Title>
+            <Text>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+              quibusdam provident quisquam, aut dolore quas molestias fugiat eos
+              est inventore.
+            </Text>
+          </TextBlock>
+        </Column>
+      </Content>
     </>
   )
 }
