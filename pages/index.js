@@ -44,6 +44,7 @@ export default function Home() {
         <BackgroundImage
           alt='Green background image'
           src='/images/greenBackground.jpg'
+          quality={100}
         />
 
         <Heading>vegan</Heading>

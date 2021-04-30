@@ -14,8 +14,11 @@ export const Hero = styled.div`
 export const BackgroundImage = styled(Image).attrs({
   layout: 'fill',
   objectFit: 'cover',
-  objectPosition: 'center',
 })`
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   z-index: -1;
 `
 
