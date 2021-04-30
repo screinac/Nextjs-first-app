@@ -72,7 +72,7 @@ export default function Home() {
           <TextBlock left>
             <Title>lorem</Title>
             <Subtitle>Lorem ipsum dolor sit amet.</Subtitle>
-            <Line>a</Line>
+            <Line left />
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
               quibusdam provident quisquam, aut dolore quas molestias fugiat eos
@@ -81,7 +81,7 @@ export default function Home() {
           </TextBlock>
         </Column>
 
-        <Column>
+        <Column invert>
           <ContentImage
             src='/images/fruit.png'
             alt='Fruit'
@@ -103,7 +103,7 @@ export default function Home() {
           <TextBlock>
             <Title>lorem</Title>
             <Subtitle>Lorem ipsum dolor sit amet.</Subtitle>
-            <Line>a</Line>
+            <Line />
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
               quibusdam provident quisquam, aut dolore quas molestias fugiat eos
@@ -127,7 +127,7 @@ export default function Home() {
           <TextBlock left>
             <Title>lorem</Title>
             <Subtitle>Lorem ipsum dolor sit amet.</Subtitle>
-            <Line>a</Line>
+            <Line left />
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
               quibusdam provident quisquam, aut dolore quas molestias fugiat eos
@@ -141,7 +141,7 @@ export default function Home() {
           </TextBlock>
         </Column>
 
-        <Column>
+        <Column invert>
           <ContentImage
             src='/images/fruit.png'
             alt='Fruit'
@@ -163,7 +163,7 @@ export default function Home() {
           <TextBlock>
             <Title>lorem</Title>
             <Subtitle>Lorem ipsum dolor sit amet.</Subtitle>
-            <Line>a</Line>
+            <Line />
             <Text>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
               quibusdam provident quisquam, aut dolore quas molestias fugiat eos
