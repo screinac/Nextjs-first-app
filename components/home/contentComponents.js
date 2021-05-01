@@ -18,10 +18,10 @@ export const Column = styled.div`
   justify-content: ${(props) => (props.left ? 'flex-end' : 'flex-start')};
   align-items: center;
 
-  @media screen and (max-width: 760px) {
+  /* @media screen and (max-width: 760px) {
     justify-content: center;
     order: ${(props) => (props.invert ? '2' : '1')};
-  }
+  } */
 `
 
 export const TextBlock = styled.div`
