@@ -114,7 +114,7 @@ export default function Home() {
         </Column>
       </Content>
 
-      <Hero style={{ height: '500px' }}>
+      <Hero>
         <BackgroundImage
           alt='Green background image'
           src='/images/background.jpeg'
