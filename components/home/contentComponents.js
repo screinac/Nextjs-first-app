@@ -6,11 +6,11 @@ export const Content = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   padding: 100px 0;
-  @media screen and (max-width: 760px) {
+  /* @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
     grid-gap: 0;
     padding: 0 0 20px 0;
-  }
+  } */
 `
 
 export const Column = styled.div`
